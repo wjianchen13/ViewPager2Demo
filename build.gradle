@@ -1,0 +1,49 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+        maven{ url = "http://maven.aliyun.com/nexus/content/groups/public/"
+            allowInsecureProtocol true }
+        maven { url 'https://maven.aliyun.com/repository/google/'}
+        maven { url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'http://developer.huawei.com/repo/'
+            allowInsecureProtocol true
+        }  //华为仓库
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }
+        maven { url 'http://maven.faceunity.com/repository/maven-public/'
+            allowInsecureProtocol true}
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:4.1.2'
+
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url = "http://maven.aliyun.com/nexus/content/groups/public/"
+            allowInsecureProtocol true
+        }
+        maven { url 'https://maven.aliyun.com/repository/google/'}
+        maven { url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }
+        maven { url 'http://developer.huawei.com/repo/'
+            allowInsecureProtocol true
+        }  //华为仓库
+        maven { url "http://lib.gcssloop.com/repository/gcssloop-central/"
+            allowInsecureProtocol true}
+        maven { url 'http://maven.faceunity.com/repository/maven-public/'
+            allowInsecureProtocol true}
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
