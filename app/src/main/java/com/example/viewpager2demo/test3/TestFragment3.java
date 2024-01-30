@@ -18,6 +18,9 @@ import com.example.viewpager2demo.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://blog.csdn.net/jingzz1/article/details/101535788
+ */
 public class TestFragment3 extends Fragment {
     private boolean bUserVisible = false;
 
