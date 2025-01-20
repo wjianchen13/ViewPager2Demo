@@ -39,4 +39,20 @@
         android:onClick="onTest3"
         android:text="ViewPager2 RecyclerView 事件冲突处理" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="onTest4"
+        android:text="垂直 ViewPager2 FragmentStateAdapter" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="onTest5"
+        android:text="垂直 ViewPager2 RecyclerView.Adapter" />
+
 </LinearLayout>
